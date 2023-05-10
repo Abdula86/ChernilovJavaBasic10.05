@@ -6,12 +6,13 @@ public class ShuttleNumbers {
         int i = 1;
         while (count < 100) {
             String shuttleNumber = String.format("%d", i);
-            i++;
             if (shuttleNumber.contains("4") || shuttleNumber.contains("9")) {
+                i++;
                 continue;
             }
             System.out.println("Шатл №: " + shuttleNumber);
             count++;
+            i++;
         }
     }
 }
